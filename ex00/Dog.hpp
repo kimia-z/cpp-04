@@ -5,11 +5,11 @@
 class Dog : public Animal
 {
 public:
-	Dog(/* args */);
+	Dog();
 	~Dog();
 	Dog(const Dog &source);
 	Dog &operator = (const Dog &source);
-	void makeSound() override;
+	void makeSound() const override;
 };
 
 
