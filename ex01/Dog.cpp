@@ -3,11 +3,13 @@
 Dog::Dog()
 {
 	_type = "Dog";
+	brain = new Brain();
 	std::cout << "Dog Is Born!" << std::endl;
 }
 
 Dog::~Dog()
 {
+	delete brain;
 	std::cout << "Dog Destroyed!" << std::endl;
 }
 

@@ -3,11 +3,13 @@
 Cat::Cat()
 {
 	_type = "Cat";
+	brain = new Brain();
 	std::cout << "Cat Is Born!" << std::endl;
 }
 
 Cat::~Cat()
 {
+	delete brain;
 	std::cout << "Cat Destroyed!" << std::endl;
 }
 
