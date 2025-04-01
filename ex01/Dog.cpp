@@ -15,13 +15,19 @@ Dog::~Dog()
 
 Dog::Dog(const Dog &source) : Animal(source)
 {
+	brain = new Brain(*source.brain);
 	std::cout << "Dog Copied!" << std::endl;
 }
 
 Dog &Dog::operator = (const Dog &source)
 {
 	if (this != &source)
+	{
 		Animal::operator=(source);
+		Brain *newBrain = new Brain(*source.brain);
+		delete brain;
+		brain = newBrain;
+	}
 	std::cout << "Dog Copy Assinment Called!" << std::endl;
 	return *this;
 }
