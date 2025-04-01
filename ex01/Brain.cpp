@@ -6,15 +6,15 @@ Brain::Brain()
 
 }
 
-Brain::Brain(const Brain &source)
-{
+// Brain::Brain(const Brain &source)
+// {
 
-}
+// }
 Brain::~Brain()
 {
 	std::cout << "Default Brain destructor called" << std::endl;
 }
-Brain &Brain::operator = (const Brain &source)
-{
+// Brain &Brain::operator = (const Brain &source)
+// {
 
-}
+// }

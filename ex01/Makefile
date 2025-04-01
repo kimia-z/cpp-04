@@ -1,4 +1,4 @@
-NAME = poly
+NAME = brain
 
 CFLAGS = -Wall -Wextra -Werror
 
