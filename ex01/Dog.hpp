@@ -13,6 +13,8 @@ public:
 	Dog(const Dog &source);
 	Dog &operator = (const Dog &source);
 	void makeSound() const override;
+	std::string getIdea(int index) const;
+	void setIdea(std::string idea, int index);
 };
 
 

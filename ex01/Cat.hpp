@@ -13,6 +13,8 @@ public:
 	~Cat();
 	Cat &operator = (const Cat &source);
 	void makeSound() const override;
+	std::string getIdea(int index) const;
+	void setIdea(std::string idea, int index);
 };
 
 #endif
