@@ -2,8 +2,9 @@
 #define CAT_HPP
 #include "Animal.hpp"
 #include "Brain.hpp"
+#include "A_animal.hpp"
 
-class Cat :public Animal
+class Cat :public A_animal
 {
 private:
 	Brain *brain;

@@ -1,10 +1,10 @@
-NAME = brain
+NAME = abstract
 
 CFLAGS = -Wall -Wextra -Werror
 
 CPP = c++
 
-SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
+SRC = main.cpp A_animal.cpp Cat.cpp Dog.cpp Brain.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
