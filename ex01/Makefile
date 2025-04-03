@@ -1,6 +1,6 @@
 NAME = brain
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++11
 
 CPP = c++
 
