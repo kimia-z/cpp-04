@@ -1,4 +1,4 @@
-#include "A_animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
 
@@ -6,11 +6,11 @@ int main()
 {
 	/* these should not be allowed(error) */
 	/*
-	const A_animal* meta = new A_animal();
-	A_animal myAnimal;
+	const AAnimal* meta = new AAnimal();
+	AAnimal myAnimal;
 	*/
-	const A_animal* i = new Dog();
-	const A_animal* j = new Cat();
+	const AAnimal* i = new Dog();
+	const AAnimal* j = new Cat();
 	std::cout << i->getType() << " " << std::endl;
 	std::cout << j->getType() << " " << std::endl;
 	i->makeSound();

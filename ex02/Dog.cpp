@@ -13,7 +13,7 @@ Dog::~Dog()
 	std::cout << "Dog Destroyed!" << std::endl;
 }
 
-Dog::Dog(const Dog &source) : A_animal(source)
+Dog::Dog(const Dog &source) : AAnimal(source)
 {
 	brain = new Brain(*source.brain);
 	std::cout << "Dog Copied!" << std::endl;
@@ -23,7 +23,7 @@ Dog &Dog::operator = (const Dog &source)
 {
 	if (this != &source)
 	{
-		A_animal::operator=(source);
+		AAnimal::operator=(source);
 		Brain *newBrain = new Brain(*source.brain);
 		delete brain;
 		brain = newBrain;
